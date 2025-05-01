@@ -1,0 +1,37 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Last Resort Hotel - Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Last Resort Hotel Management Dashboard</h1>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="{{ url_for('index') }}">📘 How to Use</a></li>
+                <li><a href="{{ url_for('run_query', query_id=1) }}">📈 Monthly Revenue</a></li>
+                <li><a href="{{ url_for('run_query', query_id=2) }}">💰 Top Guests</a></li>
+                <li><a href="{{ url_for('run_query', query_id=3) }}">📊 Room Occupancy</a></li>
+                <li><a href="{{ url_for('run_query', query_id=4) }}">💳 Deposit Overview</a></li>
+                <li><a href="{{ url_for('run_query', query_id=5) }}">🛎️ Service Revenue</a></li>
+                <li><a href="{{ url_for('run_query', query_id=6) }}">🍽️ Dining Stats</a></li>
+                <li><a href="{{ url_for('run_query', query_id=7) }}">📆 Quarterly Breakdown</a></li>
+                <li><a href="{{ url_for('run_query', query_id=8) }}">🛏️ Stay Duration</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+</body>
+</html>
+
+

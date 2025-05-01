@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>📘 How to Use the Last Resort Hotel Management Dashboard</h2>
+
+<p>Welcome to the Last Resort Hotel data dashboard. This system is designed to help management understand business performance and make data-driven decisions. Below is a quick guide to help you use the dashboard effectively.</p>
+
+<h3>🔎 Dashboard Overview</h3>
+<p>The navigation panel on the left provides access to eight predefined analytical queries. Each query page displays summarized results in a structured table format.</p>
+
+<h3>📋 What Each Section Does</h3>
+<ol>
+    <li><strong>📈 Monthly Revenue:</strong> View the total revenue generated per month from all services.</li>
+    <li><strong>💰 Top Guests:</strong> Identify high-value guests based on total spending.</li>
+    <li><strong>📊 Room Occupancy:</strong> Measure how often different room types are reserved.</li>
+    <li><strong>💳 Deposit Overview:</strong> Analyze the average deposit amounts required by room type.</li>
+    <li><strong>🛎️ Service Revenue:</strong> Examine which service types bring in the most income.</li>
+    <li><strong>🍽️ Dining Stats:</strong> Review dining usage frequency and related revenue.</li>
+    <li><strong>📆 Quarterly Breakdown:</strong> Analyze revenue across quarters by service type.</li>
+    <li><strong>🛏️ Stay Duration:</strong> Explore how long guests typically stay in each room type.</li>
+</ol>
+
+<h3>📈 How to Use</h3>
+<ul>
+    <li>Use the left-hand navigation to select any section above.</li>
+    <li>Each page shows a summarized table of live data from the database.</li>
+    <li>Use results to understand trends and improve management decisions.</li>
+</ul>
+
+<h3>🛠️ Notes</h3>
+<ul>
+    <li>This dashboard is read-only. No data is altered or inserted from the interface.</li>
+    <li>If a page appears blank, verify that the underlying table has relevant data.</li>
+</ul>
+
+<p>For technical support, contact your system administrator.</p>
+{% endblock %}
+
